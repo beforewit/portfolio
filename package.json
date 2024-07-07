@@ -10,15 +10,18 @@
     "deploy": "gh-pages -d out"
   },
   "dependencies": {
+    "@splinetool/loader": "^1.8.9",
     "@splinetool/react-spline": "^4.0.0",
     "next": "14.2.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "three": "^0.166.1"
   },
   "devDependencies": {
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/three": "^0.166.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
     "gh-pages": "^6.1.1",
