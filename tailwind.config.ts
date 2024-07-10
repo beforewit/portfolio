@@ -1,4 +1,6 @@
 import type { Config } from "tailwindcss";
+const defaultTheme = require("tailwindcss/defaultTheme")
+
 
 const config: Config = {
   content: [
@@ -7,11 +9,42 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    fontSize: {
+      8: ["8px", "10px"],
+      9: ["9px", "12px"],
+      10: ["10px", "14px"],
+      11: ["11px", "16px"],
+      12: ["12px", "18px"],
+      13: ["13px", "20px"],
+      14: ["14px", "22px"],
+      16: ["16px", "22px"],
+      18: ["18px", "24px"],
+      20: ["20px", "24px"],
+      22: ["22px", "28px"],
+      26: ["26px", "32px"],
+      28: ["28px", "34px"],
+      32: ["32px", "38.4px"],
+      36: ["36px", "43.2px"],
+    },
     extend: {
+      fontFamily: {
+        sans: ["Sora", ...defaultTheme.fontFamily.sans],
+        serif: ["Sora", ...defaultTheme.fontFamily.serif],
+        mono: ["Sora", ...defaultTheme.fontFamily.mono],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      colors: {
+        transparent: 'transparent',
+        current: 'currentColor',
+        'black_bg': '#121316',
+        'violet_bg': '#D0CFF4',
+        'gray_bg': '#F1F1F1',
+        'White900': '#FCFCFC',
+        'tangerine': '#FF2E00',
       },
     },
   },
