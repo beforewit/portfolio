@@ -26,7 +26,7 @@ export default function Header (props: IHeaderProps) {
 
 
   return (
-    <div className={classNames('flex justify-center z-50 items-center text-20 font-light text-black_bg',
+    <div className={classNames('fixed flex justify-center w-screen z-50 items-center text-20 font-light text-black_bg',
       {'bg-black_bg !text-White900': pathname==='/about'},
       {'bg-violet_bg': pathname==='/projects'},
       {'bg-gray_bg': pathname==='/publications'},
