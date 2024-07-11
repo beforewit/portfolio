@@ -10,6 +10,7 @@ import { usePathname } from 'next/navigation'
 import React, { useState } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import CloseIcon from '@mui/icons-material/Close';
+import Footer from './Footer'
 
 
 export interface IHeaderProps extends HTMLAttributes<HTMLDivElement>  {
@@ -72,8 +73,8 @@ export default function Header (props: IHeaderProps) {
       </div>
       {isOpen && (
         <div className="fixed inset-0 bg-black_bg text-violet_bg flex flex-col items-center justify-center z-50">
-          <div className='flex flex-col'>
-            <div>
+          <div className='flex flex-col h-screen justify-center gap-[125px]'>
+            <div className='fixed top-4 right-4'>
               <button onClick={toggleMenu} className="focus:outline-none">
                 <CloseIcon className={classNames("w-9 h-9 !text-violet_bg",
                       { '!text-violet_bg': pathname==='/about'},
@@ -94,7 +95,11 @@ export default function Header (props: IHeaderProps) {
                 <div className={classNames({'font-semibold':pathname==='/publications'})}>Publications</div>
               </Link>
             </nav>
+            <a href="https://bit.ly/43ruS0W" target="_blank" rel="noopener noreferrer">
+              Contact Me
+            </a>
           </div>
+          <Footer/>
         </div>
       )}
     </div>
