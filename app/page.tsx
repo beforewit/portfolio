@@ -17,7 +17,7 @@ export default function Home() {
             scene="https://prod.spline.design/7Wi5Hgg-BjjgEj94/scene.splinecode" 
           />
         </div>
-        <Footer/>
+        {/* <Footer/> */}
     </main>
   );
 }
