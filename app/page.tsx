@@ -14,7 +14,7 @@ export default function Home() {
           </div> */}
         <div className='flex-grow flex flex-col justify-center items-center'>
           <Spline
-            scene="https://prod.spline.design/7Wi5Hgg-BjjgEj94/scene.splinecode" 
+            scene="https://prod.spline.design/zq3CjWUJWSfhIFor/scene.splinecode" 
           />
         </div>
         {/* <Footer/> */}
