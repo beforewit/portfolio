@@ -7,6 +7,7 @@ const sora = Sora({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "hy.space",
   description: "hy.space",
+  themeColor: "#D0CFF4"
 };
 
 export default function RootLayout({
