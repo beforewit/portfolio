@@ -13,7 +13,7 @@ export default function Home() {
           {/* <div className='px-2'>
             <HamburgerMenu/>
           </div> */}
-        <div className='flex-grow'>
+        <div className='flex-grow pt-[88px]'>
           <Spline
             scene="https://prod.spline.design/7Wi5Hgg-BjjgEj94/scene.splinecode" 
           />

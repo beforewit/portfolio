@@ -9,6 +9,10 @@
     "build": "next build"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@mui/icons-material": "^5.16.0",
+    "@mui/material": "^5.16.0",
     "@splinetool/loader": "^1.8.9",
     "@splinetool/react-spline": "^4.0.0",
     "classnames": "^2.5.1",
