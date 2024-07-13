@@ -16,7 +16,8 @@ const About: React.FC = () => {
   return (
     <main className="flex min-h-screen flex-col bg-White900 items-center">
       <Header/>
-      <div id="skills" className="flex flex-col gap-[64px] md:gap-[195px] md:flex-row pt-[148px] pb-[60px] px-[32px] max-w-screen-xl ">
+      <div className="w-full h-[88px]"/>
+      <div id="skills" className="flex flex-col gap-[64px] md:gap-[195px] md:flex-row pt-[80px] pb-[60px] px-[32px] max-w-screen-xl ">
         <div className="l flex flex-1 flex-col gap-[30px] w-[510px]">
           <div>
             <Image src={yoda} alt="yoda"/>
