@@ -99,7 +99,7 @@ export default function Header (props: IHeaderProps) {
               Contact Me
             </a>
           </div>
-          <Footer/>
+          {/* <Footer/> */}
         </div>
       )}
     </div>
