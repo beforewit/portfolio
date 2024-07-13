@@ -14,7 +14,7 @@ export interface IExperienceProps {
 
 export default function Experience (props: IExperienceProps) {
   return (
-    <div className="flex flex-col md:flex-row justify-between gap-6 border-[1px] px-6 md:px-7 py-7 md:py-10 border-gray_border rounded-lg border-solid">
+    <div className="flex flex-col md:flex-row justify-between gap-6 border-[1px] px-6 md:px-7 py-7 md:py-10 border-gray_border rounded-lg border-solid hover:bg-gray_hover">
       <div className="l flex flex-row text-white items-start">
         <div className="flex items-center gap-[30px]">
           <Image src={props.iconSrc} width={52} height={52} alt="LG logo"/>

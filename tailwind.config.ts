@@ -52,6 +52,7 @@ const config: Config = {
         'gray_desc': '#605553',
         'gray_border': '#71717A',
         'gray_desc2': '#D4D4D8',
+        'gray_hover': '#27272A'
       },
     },
   },
