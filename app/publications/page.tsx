@@ -29,9 +29,9 @@ const Publications: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="r flex-1">
+            {/* <div className="r flex-1">
 
-            </div>
+            </div> */}
           </div>
 
           <div className="flex flex-col md:flex-row-reverse">
@@ -83,9 +83,9 @@ const Publications: React.FC = () => {
 
               </div>
             </div>
-            <div className="r flex-1">
+            {/* <div className="r flex-1">
 
-            </div>
+            </div> */}
           
           </div>
 
@@ -102,9 +102,9 @@ const Publications: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="r flex-1">
+            {/* <div className="r flex-1">
 
-            </div>
+            </div> */}
           </div>
 
         </div>

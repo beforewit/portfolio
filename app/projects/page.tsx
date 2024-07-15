@@ -2,9 +2,6 @@ import Header from "@/components/Header";
 import project1 from '../../public/project1.png'
 import project2 from '../../public/project2.png'
 import project3 from '../../public/project3.png'
-import Image from "next/image";
-import readMore from '../../public/readMore.png'
-import Link from "next/link";
 import Project, { IProjectProps } from "@/components/Project";
 // pages/Projects.tsx
 const Projects: React.FC = () => {
@@ -13,10 +10,10 @@ const Projects: React.FC = () => {
       <Header/>
       <div className="w-full h-[88px]"/>
       <div className="w-full py-10 md:py-[60px] flex flex-col items-center">
-        <div className="flex justify-center items-center text-28 md:text-48 py-[20px] text-white gap-4">
+        {/* <div className="flex justify-center items-center text-28 md:text-48 py-[20px] text-white gap-4">
           <div>My</div>
           <span className="font-bold"> Project</span>
-        </div>
+        </div> */}
         <div id="projects" className="flex flex-col gap-7 pt-[px] pb-[60px] px-[32px] max-w-screen-xl ">
           {projects.map((i, key)=><Project {...i} key={key}/>)}
         </div>
