@@ -38,7 +38,7 @@ export default function Header (props: IHeaderProps) {
         <Link href="/">
           {pathname==='/about' ? <Image src={logoWhite} alt="Main Logo" /> : <Image src={logoBlack} alt="Main Logo" />}
         </Link>
-        <div className='hidden md:flex flex-row gap-[36px]'>
+        <div className='hidden md:flex flex-row gap-[64px]'>
           <Link href="/about">
             <div className={classNames({'font-semibold':pathname==='/about'})}>About Me</div>
           </Link>

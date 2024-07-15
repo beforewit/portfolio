@@ -11,7 +11,7 @@ export default function Home() {
         <Header/>
         <div className='spline flex-grow flex flex-col justify-center items-center'>
           <Spline
-            className='contents md:hidden'
+            className='contents'
             scene="https://prod.spline.design/zq3CjWUJWSfhIFor/scene.splinecode" 
           />
         </div>
