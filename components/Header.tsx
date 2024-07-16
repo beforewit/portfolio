@@ -43,19 +43,19 @@ export default function Header (props: IHeaderProps) {
         </Link>
         <div className='hidden md:flex flex-row gap-10'>
           <Link href="/about">
-            <div className={classNames({'font-semibold':pathname==='/about'})}>About Me</div>
+            <div className={classNames({'font-semibold':pathname==='/about'})}>about me</div>
           </Link>
           <Link href="/projects">
-            <div className={classNames({'font-semibold':pathname==='/projects'})}>Projects</div>
+            <div className={classNames({'font-semibold':pathname==='/projects'})}>projects</div>
           </Link>
           <Link href="/publications">
-            <div className={classNames({'font-semibold':pathname==='/publications'})}>Publications</div>
+            <div className={classNames({'font-semibold':pathname==='/publications'})}>publications</div>
           </Link>
           {/* <Link href='/blog'>
             <div className={classNames({'font-semibold':pathname==='/blog'})}>Blog</div>
           </Link> */}
           <a className='underline' href="https://bit.ly/43ruS0W" target="_blank" rel="noopener noreferrer">
-            Contact Me
+            contact me
           </a>
         </div>
         {/* <div className='hidden md:flex'>
