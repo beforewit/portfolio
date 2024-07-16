@@ -1,8 +1,7 @@
-import HamburgerMenu from '@/components/HamburgerMenu';
-import Spline from '@splinetool/react-spline/next';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 
+
+import Header from '@/components/Header';
+import SplineComponent from '@/components/Spline';
 
 
 export default function Home() {
@@ -10,10 +9,7 @@ export default function Home() {
     <main className="flex flex-col min-h-screen  bg-violet_bg">
         <Header/>
         <div className='spline flex-grow flex flex-col justify-center items-center'>
-          <Spline
-            className='contents'
-            scene="https://prod.spline.design/zq3CjWUJWSfhIFor/scene.splinecode" 
-          />
+          <SplineComponent/>
         </div>
     </main>
   );
