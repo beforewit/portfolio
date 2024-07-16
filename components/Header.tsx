@@ -36,9 +36,12 @@ export default function Header (props: IHeaderProps) {
      )}>
       <div className="flex flex-1 max-w-screen-xl py-[24px] px-[32px] items-center justify-between">
         <Link href="/">
-          {pathname==='/about' ? <Image src={logoWhite} alt="Main Logo" /> : <Image src={logoBlack} alt="Main Logo" />}
+          {pathname==='/about' ? 
+            <Image src={logoWhite} alt="Main Logo" />  : 
+            <Image src={logoBlack} alt="Main Logo" />
+          }
         </Link>
-        <div className='hidden md:flex flex-row gap-[64px]'>
+        <div className='hidden md:flex flex-row gap-10'>
           <Link href="/about">
             <div className={classNames({'font-semibold':pathname==='/about'})}>About Me</div>
           </Link>
@@ -51,12 +54,12 @@ export default function Header (props: IHeaderProps) {
           {/* <Link href='/blog'>
             <div className={classNames({'font-semibold':pathname==='/blog'})}>Blog</div>
           </Link> */}
-        </div>
-        <div className='hidden md:flex'>
-          <a href="https://bit.ly/43ruS0W" target="_blank" rel="noopener noreferrer">
+          <a className='underline' href="https://bit.ly/43ruS0W" target="_blank" rel="noopener noreferrer">
             Contact Me
           </a>
         </div>
+        {/* <div className='hidden md:flex'>
+        </div> */}
         <div className="md:hidden">
           <button onClick={toggleMenu} className="focus:outline-none">
             {isOpen ? (
