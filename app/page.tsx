@@ -1,8 +1,6 @@
-
-
 import Header from '@/components/Header';
 import SplineComponent from '@/components/Spline';
-import Spline from '@splinetool/react-spline';
+// import Spline from '@splinetool/react-spline';
 
 
 export default function Home() {
@@ -13,11 +11,11 @@ export default function Home() {
             <div className='px-8 py-2 rounded-full bg-tangerine text-white'>
               Take a tour of my room!
             </div>
-               <Spline
-          className='contents'
-          scene="https://prod.spline.design/zq3CjWUJWSfhIFor/scene.splinecode" 
-        />
-          {/* <SplineComponent/> */}
+               {/* <Spline
+                className='contents'
+                scene="https://prod.spline.design/zq3CjWUJWSfhIFor/scene.splinecode" 
+              /> */}
+          <SplineComponent/>
         </div>
     </main>
   );
