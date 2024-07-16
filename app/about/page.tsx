@@ -17,8 +17,24 @@ const About: React.FC = () => {
     <main className="flex min-h-screen flex-col bg-White900 items-center">
       <Header/>
       <div className="w-full h-[88px]"/>
-      <div id="skills" className="flex flex-col gap-[64px] md:gap-[195px] md:flex-row pt-[80px] pb-[60px] px-[32px] max-w-screen-xl ">
-        <div className="l flex flex-1 flex-col gap-[30px] w-[510px]">
+      <div id="skills" className="flex flex-col gap-[64px] justify-between md:flex-row pt-[80px] pb-[60px] px-[32px] max-w-screen-xl ">
+        <div className="l flex flex-1 flex-col py-10 text-tangerine max-w-[520px]">
+          <div className="text-40 py-3">
+            Specialized 
+            <span className="font-bold pl-4">
+              Skills
+            </span>
+          </div>
+          <div className="division-line flex justify-center items-center py-9">
+            <em className="h-[2px] w-[22px] bg-tangerine"/>
+          </div>
+          <div className="flex flex-col gap-10">
+            {SpecializedSkills.map((i, key)=>{
+              return <SpecializedSkill {...i} key={key}/>
+            })}
+          </div>
+        </div>
+        <div className="r flex flex-1 flex-col gap-[30px] max-w-[510px]">
           <div>
             <Image src={yoda} alt="yoda"/>
           </div>
@@ -36,22 +52,6 @@ const About: React.FC = () => {
               <Image src={s4} width={82} alt="Figma"/>
               <Image src={s5} width={82} alt="Rhino"/>
             </div>
-          </div>
-        </div>
-        <div className="r flex flex-1 flex-col py-10 text-tangerine max-w-[511px]">
-          <div className="text-40 py-3">
-            Specialized 
-            <span className="font-bold pl-4">
-              Skills
-            </span>
-          </div>
-          <div className="division-line flex justify-center items-center py-9">
-            <em className="h-[2px] w-[22px] bg-tangerine"/>
-          </div>
-          <div className="flex flex-col gap-10">
-            {SpecializedSkills.map((i, key)=>{
-              return <SpecializedSkill {...i} key={key}/>
-            })}
           </div>
         </div>
       </div>

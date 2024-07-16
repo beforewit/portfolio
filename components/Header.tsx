@@ -28,7 +28,7 @@ export default function Header (props: IHeaderProps) {
 
   return (
     <div className={classNames('fixed flex justify-center w-screen z-50 items-center text-20 font-light text-black_bg',
-      {'bg-black_bg !text-White900': pathname==='/about'},
+      {'bg-White900': pathname==='/about'},
       {'bg-violet_bg': pathname==='/projects'},
       {'bg-gray_bg': pathname==='/publications'},
       // {'bg-gray_bg': pathname==='/blog'},
@@ -36,10 +36,11 @@ export default function Header (props: IHeaderProps) {
      )}>
       <div className="flex flex-1 max-w-screen-xl py-[24px] px-[32px] items-center justify-between">
         <Link href="/">
-          {pathname==='/about' ? 
+          <Image src={logoBlack} alt="Main Logo" />
+          {/* {pathname==='/about' ? 
             <Image src={logoWhite} alt="Main Logo" />  : 
-            <Image src={logoBlack} alt="Main Logo" />
-          }
+            
+          } */}
         </Link>
         <div className='hidden md:flex flex-row gap-10'>
           <Link href="/about">
