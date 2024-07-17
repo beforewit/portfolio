@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "HyunYoung  Kim",
   description: "AI Product Designer",
   openGraph:{
-    images:['../public/ogimage.png']
+    images:['https://img2.stibee.com/28983_2288692_1721212497703294069.png']
   }
 };
 
