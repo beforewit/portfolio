@@ -69,7 +69,7 @@ export default function Header (props: IHeaderProps) {
               )}/>
             ) : (
               <MenuIcon className={classNames("w-9 h-9 text-black_bg",
-                { '!text-violet_bg': pathname==='/about'},
+                // { '!text-violet_bg': pathname==='/about'},
               )} />
             )}
           </button>
@@ -81,7 +81,7 @@ export default function Header (props: IHeaderProps) {
             <div className='fixed top-4 right-4'>
               <button onClick={toggleMenu} className="focus:outline-none">
                 <CloseIcon className={classNames("w-9 h-9 !text-violet_bg",
-                      { '!text-violet_bg': pathname==='/about'},
+                      // { '!text-violet_bg': pathname==='/about'},
                 )} />
               </button>
             </div>
