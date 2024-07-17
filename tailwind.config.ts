@@ -35,6 +35,9 @@ const config: Config = {
         serif: ["Sora", ...defaultTheme.fontFamily.serif],
         mono: ["Sora", ...defaultTheme.fontFamily.mono],
       },
+      letterSpacing: {
+        'n2': '-0.02em',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

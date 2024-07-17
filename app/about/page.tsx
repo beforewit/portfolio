@@ -1,5 +1,5 @@
 import Header from "@/components/Header";
-import yoda from "../../public/yoda.png"
+import ufo from "../../public/ufo.png"
 import s1 from '../../public/skill1.png'
 import s2 from '../../public/skill2.png'
 import s3 from '../../public/skill3.png'
@@ -17,13 +17,15 @@ const About: React.FC = () => {
     <main className="flex min-h-screen flex-col bg-White900 items-center">
       <Header/>
       <div className="w-full h-[88px]"/>
-      <div id="skills" className="flex flex-col gap-[64px] justify-between md:flex-row pt-[80px] pb-[60px] px-[32px] max-w-screen-xl ">
+      <div id="skills" className="flex flex-col w-full gap-[64px] justify-between md:flex-row pt-[80px] pb-[60px] px-4 md:px-[32px] max-w-screen-xl ">
         <div className="l flex flex-1 flex-col py-10 text-tangerine max-w-[520px]">
-          <div className="text-40 py-3">
-            Specialized 
-            <span className="font-bold pl-4">
+          <div className="flex text-40 py-3 flex-col md:flex-row items-center md:justify-start md:gap-4">
+            <div>
+              Specialized 
+            </div>
+            <div className="font-bold">
               Skills
-            </span>
+            </div>
           </div>
           <div className="division-line flex justify-center items-center py-9">
             <em className="h-[2px] w-[22px] bg-tangerine"/>
@@ -34,9 +36,9 @@ const About: React.FC = () => {
             })}
           </div>
         </div>
-        <div className="r flex flex-1 flex-col gap-[30px] max-w-[510px]">
+        <div className="r flex flex-1 flex-col gap-[30px] max-w-[490px]">
           <div>
-            <Image src={yoda} alt="yoda"/>
+            <Image src={ufo} alt="ufo"/>
           </div>
           <div>
             <div className="text-40 py-3">
@@ -56,57 +58,67 @@ const About: React.FC = () => {
         </div>
       </div>
       <div id="experience" className="flex w-full bg-black_bg justify-center">
-        <div className="w-full flex flex-col gap-0 pt-[60px] pb-[60px] px-[32px] max-w-screen-xl ">
-          <div className="title flex flex-1 py-5 gap-4 justify-center items-center text-white">
+        <div className="w-full flex flex-col gap-0 pt-[60px] pb-[60px] px-4 md:px-[32px] max-w-screen-xl ">
+          <div className="title flex flex-1 flex-wrap py-5 gap-4 justify-center items-center text-white">
             <span className="font-bold text-48">Experience</span>
-            <span className="text-28">2018 - 2024</span>
+            <span className="text-18 md:text-28">2018 - 2024</span>
           </div>
-          <div className="flex flex-col gap-8 py-10 px-6">
+          <div className="flex flex-col gap-8 py-10 md:px-6">
             {experiences.map((i, key)=><Experience {...i} key={key}/>)}
           </div>
         </div>
       </div>
       <div id="educations" className="flex w-full justify-center">
-        <div className="w-full flex flex-col gap-0 pt-[60px] pb-[60px] px-[32px] max-w-screen-xl ">
-          <div className="title flex flex-1 py-5 gap-4 justify-center items-center text-tangerine">
+        <div className="w-full flex flex-col gap-0 pt-[60px] pb-[60px] px-4 md:px-[32px] max-w-screen-xl ">
+          <div className="title flex flex-1 flex-wrap py-5 gap-4 justify-center items-center text-tangerine">
             <span className="font-bold text-48">Educations</span>
-            <span className="text-28">2011 - 2017</span>
+            <span className="text-18 md:text-28">2011 - 2017</span>
           </div>
-          <div className="flex flex-col gap-8 py-10 px-6">
-            <div className="flex flex-col justify-between gap-6 border-[1px] px-6 md:px-7 py-7 md:py-10 rounded-lg bg-tangerine_light text-white">
+          <div className="flex flex-col gap-8 py-10 md:px-6">
+            <div className="flex flex-col justify-between gap-6 border-[1px] px-6 md:px-7 py-7 md:py-10 rounded-lg bg-tangerine_light text-white tracking-n2">
               <div className="flex flex-col md:flex-row justify-between flex-1 gap-3">
                 <div className="flex flex-col text-16 gap-2">
-                  <div className="font-bold text-24">
-                    연세대학교
+                  <div className="flex flex-row flex-wrap text-24">
+                    <div className="font-bold">
+                      Yonsei University,&nbsp;
+                    </div>
+                    <div>
+                      School of Business
+                    </div>
                   </div>
                   <div>
-                    <span className="font-bold">경영학 석사 - 세부전공: HCI</span>(인간과 컴퓨터 상호작용) 4.24/4.30
+                    Master of Science in Business Administration, concentration in Human-Computer Interaction (HCI) GPA 4.24/4.30
                   </div>
                 </div>
-                <div className="opacity-60">
-                  2015.09 - 2017.08
+                <div>
+                  Sep 2015 - Aug 2017
                 </div>
               </div>
               <div className="opacity-90">
-                연세 HCI Lab 근무 (2014.12 - 2017.12) <br/>
-                (학위논문) Imperfection as a Virtue: A Longitudinal Study of the Impact of the Type and Number of Errors in Intelligent Learning Companions in MOOC
+                Researcher @Yonsei HCI Lab (Dec 2014 - Dec 2017)<br/>
+                (master thesis) Imperfection as a Virtue: A Longitudinal Study of the Impact of the Type and Number of Errors in Intelligent Learning Companions in MOOC
               </div>
             </div>
-            <div className="flex flex-col justify-between gap-6 border-[1px] px-6 md:px-7 py-7 md:py-10 rounded-lg bg-tangerine_light text-white">
+            <div className="flex flex-col justify-between gap-6 border-[1px] px-6 md:px-7 py-7 md:py-10 rounded-lg bg-tangerine_light text-white tracking-n2">
               <div className="flex flex-col md:flex-row justify-between flex-1 gap-3">
                 <div className="flex flex-col text-16 gap-2">
-                  <div className="font-bold text-24">
-                    연세대학교
+                <div className="flex flex-row flex-wrap text-24">
+                    <div className="font-bold">
+                      Yonsei University,&nbsp;
+                    </div>
+                    <div>
+                      School of Business
+                    </div>
                   </div>
                   <div>
-                    <span className="font-bold">경영학</span>(주전공) 4.26/4.30(최우등 졸업)
+                    <span className="font-bold">Bachelor of Business Administration</span> GPA 4.26/4.30(summa cum laude)
                   </div>
                   <div>
-                    <span className="font-bold">통합디자인학 - 세부전공: 인터랙션 디자인</span>(복수전공)
+                    <span className="font-bold">Bachelor of Integrated Design, concentration in Interaction Design</span> (double major)
                   </div>
                 </div>
-                <div className="opacity-60">
-                  2011.03 - 2015.08
+                <div>
+                  Mar 2011 - Aug 2015
                 </div>
               </div>
             </div>
@@ -121,14 +133,30 @@ export default About;
 
 
 const SpecializedSkills = [
-  {title: "① 서비스 리드", subTitle: "팀 구축부터 출시까지 3번의 경험", description:"UX 디자이너로 시작하여 PM, PO를 거치며, 서비스 기획자로 6년간 각기 다른 도메인에서 총 3개의 서비스를 처음부터 구축하여 성공적으로 상용화해본 경험을 보유하고 있습니다. 특히 사내벤처 리더로 서비스를 제안하고, 팀 구축, 유료 사업화를 이끌었습니다. 상위 기획부터 Frontend UX 기획, Backend 정책 기획, 데이터 기반 운영 등 기획 프로세스 전반에 대해 이해하며, B2C 및 B2B 서비스 기획 경험을 모두 가지고 있습니다."},
-  {title: "② 지표 관리", subTitle: "목표는 숫자로, 결과도 숫자로", description:"생성형 AI 서비스 출시 전, 후에 수차례의 정성/정량 평가를 거쳐 사용자 만족도와 정확도 지표를 추적하여 서비스 개선의 성과를 측정했습니다. 또한 온라인 운동 서비스의 유저 리텐션을 모니터링하고 향상시키기 위해 사용자 인터뷰와 가설을 검증하고, 반복을 통해 고객 경험을 개선했습니다."},
-  {title: "③ 일정 집착", subTitle: "일정은 반드시 지키는 것", description:"2번의 프로젝트에서 정기적인 회고 미팅 진행과 스크럼 회의를 주도하여 팀원 간의 원활한 소통을 통해 효율적이고 협력적인 조직 문화를 구축했습니다. 프로젝트 각 단계의 진행 상황과 예상 이슈를 빠르게 파악하여 필요 시 조치를 취해 프로젝트 일정을 준수합니다."},
-  {title: "④ AI 프렌들리", subTitle: "생성형 AI 기반 프로덕트 기획/출시 ", description:"LLM + RAG가 적용된 고객 문의 챗봇을 설계, 프로젝트 관리(PM), 상용화, 운영한 경험을 보유하고 있습니다. (LG ThinQ 카카오 챗봇 베타버전 오픈, ‘24.02) 또한 생성형 AI 기술을 적용한 스마트 홈 챗봇 ChatThinQ의 ‘루틴 생성’ 및 ‘날씨 문의’ 도메인을 기획하여 사용화에 기여했습니다. (‘24.08 출시 예정)"}
+  {
+    title: "① Service Lead",
+    subTitle: "Experience leading teams from start to launch",
+    description:"Starting as a UX designer and progressing through roles such as PM and PO, I have accumulated 6 years of experience in service planning, successfully launching 3 different services across various domains. Particularly, I have demonstrated leadership in proposing new services to startups, building teams, and achieving business objectives. My expertise spans from high-level planning including Frontend UX, Backend policy planning, and data-based operations, to understanding the entire process and having experience in both B2C and B2B service planning."
+  },
+  {
+    title: "② Data Management", 
+    subTitle: "Speaking with numbers", 
+    description: "During the process of launching the generative AI service, I conducted multiple rounds of qualitative and quantitative evaluations to track user satisfaction and accuracy metrics, measuring the performance improvements of the service. Additionally, I monitored and improved user retention for an online fitness service by conducting user interviews, validating hypotheses, and iterating to enhance the customer experience."
+  },
+  {
+    title: "③ Project Management", 
+    subTitle: "Facilitating collaboration and managing issues", 
+    description:"Led regular retrospectives and scrum meetings in two projects to monitor progress and enhance communication among team members. Monitored progress at each stage and quickly addressed potential issues to ensure adherence to project timelines."
+  },
+  {
+    title: "④ AI-Friendly", 
+    subTitle: "Experience in commercializing AI products", 
+    description: "Designed 2 chatbots using LLM and RAG. Led the project as the product manager(PM), and operated the LG ThinQ Kakao chatbot beta version (Feb 2024). Designed the 'Routine Creation' and 'Weather Inquiry' domains for the smart home chatbot ChatThinQ, applying generative AI technology (scheduled for release in July 2024)."
+  }
 ]
 
 const experiences = [
-  {iconSrc: lg, title: "AI 서비스 기획자, 선임", subTitle: "LG전자 플랫폼사업센터, AI서비스Task", period: "2023.07 - 현재", periodLength: "(1년)", details: <div>Generative AI 모델 기반의 ThinQ 앱 챗봇 서비스 기획<br/>LG ThinQ 카카오 챗봇 프로젝트 PM, 베타 출시<br/>M사 Voice Agent 서비스 기</div>},
-  {iconSrc: polymate, title: "PO, 대표", subTitle: "LG전자 사내벤처 POLYMATE", period: "2021.01 - 2023.06", periodLength: "(2년 6개월)", details: <div>비대면 온라인 운동 플랫폼 서비스 기획, 유료 사업화</div>},
-  {iconSrc: lg, title: "UX 디자이너, 연구원", subTitle: "LG전자 CTO, B2B솔루션팀", period: "2018.07 - 2020.12", periodLength: "(2년 6개월)", details: <div>GS칼텍스 전기차 충전소 통합 관리 솔루션 PoC <br/>웹 관제 시스템 UX 디자인 100%, 사업화 기여</div>},
+  {iconSrc: lg, title: "AI Product Designer", subTitle: "LG Electronics, Platform Business Center, AI Service Task", period: "LG Electronics, Platform Business Center, AI Service Task", periodLength: "(1yr)", details: <div>GDesigned generative AI model-based chatbot service for ThinQ app<br/>Product manager for LG ThinQ Kakao Chatbot, beta launch<br/>Designed voice agent for elderly care service</div>},
+  {iconSrc: polymate, title: "PO (CEO)", subTitle: "LG Electronics, CIC, POLYMATE", period: "Jan 2021 - Jun 2023", periodLength: "(2yrs 6m)", details: <div>Designed and commercialized paid online fitness platform</div>},
+  {iconSrc: lg, title: "UX Designer", subTitle: "LG Electronics, CTO, B2B Solution", period: "Jul 2018 - Dec 2020", periodLength: "(2yrs 6m)", details: <div>PoC for GS Caltex electric vehicle charging station integrated management solution<br/>Lead UX design of web control system, contributing to commercialization</div>},
 ]

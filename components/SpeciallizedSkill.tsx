@@ -9,15 +9,15 @@ export interface ISpecializedSkillProps {
 export default function SpecializedSkill (props: ISpecializedSkillProps) {
   return (
     <div id="ss1" className="flex flex-col gap-3" >
-      <div className="flex flex-row gap-3 items-center py-1">
+      <div className="flex flex-col gap-3 items-center md:items-start py-1">
         <div className="font-bold text-24">
           {props.title}
         </div>
-        <div className="text-20">
+        <div className="flex text-18 items-center md:items-start text-center md:text-left">
           {props.subTitle}
         </div>
       </div>
-      <div className="text-12 text-gray_desc">
+      <div className="text-12 text-gray_desc text-justify md:text-left">
         {props.description}
       </div>
     </div>
