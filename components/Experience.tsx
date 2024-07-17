@@ -28,7 +28,7 @@ export default function Experience (props: IExperienceProps) {
           </div>
         </div>
       </div>
-      <div className="r flex flex-col justify-end text-gray_desc2 md:text-right gap-2 md:gap-7">
+      <div className="r flex flex-col justify-end text-gray_desc2 md:text-right gap-4 md:gap-7">
         <div className="text-16 flex flex-col gap-1 text-white opacity-60">
           <div>
             {props.period}

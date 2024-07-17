@@ -40,7 +40,7 @@ const About: React.FC = () => {
           <div>
             <Image src={ufo} alt="ufo"/>
           </div>
-          <div>
+          <div className="text-center md:text-left">
             <div className="text-40 py-3">
               Design 
               <span className="font-bold pl-4">
@@ -87,7 +87,8 @@ const About: React.FC = () => {
                     </div>
                   </div>
                   <div>
-                    Master of Science in Business Administration, concentration in Human-Computer Interaction (HCI) GPA 4.24/4.30
+                    <span className="font-bold">Master of Science in Business Administration, concentration in Human-Computer Interaction (HCI)</span>
+                    GPA 4.24/4.30
                   </div>
                 </div>
                 <div>
@@ -136,7 +137,7 @@ const SpecializedSkills = [
   {
     title: "① Service Lead",
     subTitle: "Experience leading teams from start to launch",
-    description:"Starting as a UX designer and progressing through roles such as PM and PO, I have accumulated 6 years of experience in service planning, successfully launching 3 different services across various domains. Particularly, I have demonstrated leadership in proposing new services to startups, building teams, and achieving business objectives. My expertise spans from high-level planning including Frontend UX, Backend policy planning, and data-based operations, to understanding the entire process and having experience in both B2C and B2B service planning."
+    description:"Starting as a UX designer and progressing through roles such as PM and PO, I have accumulated 6 years of experience in service design, successfully launching 3 different services across various domains. Particularly, I have demonstrated leadership in proposing new services to startups, building teams, and achieving business objectives. My expertise spans from high-level planning including Frontend UX, Backend policy planning, and data-based operations, to understanding the entire process and having experience in both B2C and B2B service design."
   },
   {
     title: "② Data Management", 
@@ -156,7 +157,7 @@ const SpecializedSkills = [
 ]
 
 const experiences = [
-  {iconSrc: lg, title: "AI Product Designer", subTitle: "LG Electronics, Platform Business Center, AI Service Task", period: "Jul 2023 - Present", periodLength: "", details: <div>GDesigned generative AI model-based chatbot service for ThinQ app<br/>Product manager for LG ThinQ Kakao Chatbot, beta launch<br/>Designed voice agent for elderly care service</div>},
-  {iconSrc: polymate, title: "PO (CEO)", subTitle: "LG Electronics, CIC, POLYMATE", period: "Jan 2021 - Jun 2023", periodLength: "(2yrs 6m)", details: <div>Designed and commercialized paid online fitness platform</div>},
-  {iconSrc: lg, title: "UX Designer", subTitle: "LG Electronics, CTO, B2B Solution", period: "Jul 2018 - Dec 2020", periodLength: "(2yrs 6m)", details: <div>PoC for GS Caltex electric vehicle charging station integrated management solution<br/>Lead UX design of web control system, contributing to commercialization</div>},
+  {iconSrc: lg, title: "AI Product Designer", subTitle: "LG Electronics, Platform Business Center, AI Service Task", period: "Jul 2023 - Present", periodLength: "", details: <div className="leading-[14.3px]">Designed generative AI model-based chatbot service for ThinQ app<br/><br/>Product manager for LG ThinQ Kakao Chatbot, beta launch<br/><br/>Designed voice agent for elderly care service</div>},
+  {iconSrc: polymate, title: "PO (CEO)", subTitle: "LG Electronics, CIC, POLYMATE", period: "Jan 2021 - Jun 2023", periodLength: "(2yrs 6m)", details: <div className="leading-[14.3px]">Designed and commercialized paid online fitness platform</div>},
+  {iconSrc: lg, title: "UX Designer", subTitle: "LG Electronics, CTO, B2B Solution", period: "Jul 2018 - Dec 2020", periodLength: "(2yrs 6m)", details: <div className="leading-[14.3px]">PoC for GS Caltex electric vehicle charging station integrated management solution<br/><br/>Lead UX design of web control system, contributing to commercialization</div>},
 ]

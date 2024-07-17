@@ -36,7 +36,7 @@ export default function Header (props: IHeaderProps) {
      )}>
       <div className="flex flex-1 max-w-screen-xl py-[24px] px-[32px] items-center justify-between">
         <Link href="/">
-          <Image src={logoBlack} alt="Main Logo" />
+          <Image width={141} src={logoBlack} alt="Main Logo" />
           {/* {pathname==='/about' ? 
             <Image src={logoWhite} alt="Main Logo" />  : 
             

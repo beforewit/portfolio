@@ -8,7 +8,7 @@ export default function SplineMobile (props: ISplineMobileProps) {
   return (
     <Spline
       className='contents'
-      scene="https://prod.spline.design/zq3CjWUJWSfhIFor/scene.splinecode" 
+      scene="https://prod.spline.design/YKndXYUXrJoPIhvy/scene.splinecode" 
     />
   );
 }
