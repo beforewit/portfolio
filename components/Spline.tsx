@@ -17,41 +17,4 @@ export default function SplineComponent (props: ISplineComponentProps) {
   if (isDesktop) {
     return <SplineDesktop/>
   }
-
-
-  // useEffect(() => {
-  //   const handleResize = () => {
-  //     setIsMobile(window.innerWidth <= 767);
-  //   };
-
-  //   handleResize();
-  //   window.addEventListener('resize', handleResize);
-
-  //   return () => {
-  //     window.removeEventListener('resize', handleResize);
-  //   };
-  // }, []);
-
-//   if(isMobile) return <Spline
-//   className='contents'
-//   scene="https://prod.spline.design/zq3CjWUJWSfhIFor/scene.splinecode" 
-// />
-  // return 'pc'
-  // return (
-  //   <>
-  //   {isMobile ?
-  //      ()=>
-  //       <Spline
-  //         className='contents'
-  //         scene="https://prod.spline.design/zq3CjWUJWSfhIFor/scene.splinecode" 
-  //       />
-  //     :
-  //       <Spline
-  //         className='contents'
-  //         scene="https://prod.spline.design/8Vf1NzmgAl7rVCAF/scene.splinecode" 
-  //       />
-  //   }
-
-  //   </>
-  // );
 }
