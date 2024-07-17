@@ -156,7 +156,7 @@ const SpecializedSkills = [
 ]
 
 const experiences = [
-  {iconSrc: lg, title: "AI Product Designer", subTitle: "LG Electronics, Platform Business Center, AI Service Task", period: "LG Electronics, Platform Business Center, AI Service Task", periodLength: "(1yr)", details: <div>GDesigned generative AI model-based chatbot service for ThinQ app<br/>Product manager for LG ThinQ Kakao Chatbot, beta launch<br/>Designed voice agent for elderly care service</div>},
+  {iconSrc: lg, title: "AI Product Designer", subTitle: "LG Electronics, Platform Business Center, AI Service Task", period: "Jul 2023 - Present", periodLength: "", details: <div>GDesigned generative AI model-based chatbot service for ThinQ app<br/>Product manager for LG ThinQ Kakao Chatbot, beta launch<br/>Designed voice agent for elderly care service</div>},
   {iconSrc: polymate, title: "PO (CEO)", subTitle: "LG Electronics, CIC, POLYMATE", period: "Jan 2021 - Jun 2023", periodLength: "(2yrs 6m)", details: <div>Designed and commercialized paid online fitness platform</div>},
   {iconSrc: lg, title: "UX Designer", subTitle: "LG Electronics, CTO, B2B Solution", period: "Jul 2018 - Dec 2020", periodLength: "(2yrs 6m)", details: <div>PoC for GS Caltex electric vehicle charging station integrated management solution<br/>Lead UX design of web control system, contributing to commercialization</div>},
 ]
