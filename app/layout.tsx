@@ -5,8 +5,11 @@ import "./globals.css";
 const sora = Sora({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "hy.space",
-  description: "hy.space descriptions..",
+  title: "HyunYoung  Kim",
+  description: "AI Product Designer",
+  openGraph:{
+    images:['../public/ogimage.png']
+  }
 };
 
 export const viewport: Viewport = {
