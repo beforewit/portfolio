@@ -6,13 +6,13 @@ const Publications: React.FC = () => {
     <main className="flex min-h-screen flex-col bg-White900">
       <Header/>
       <div className="w-full h-[88px]"/>
-      <div className="w-full py-10 md:py-[60px] flex flex-col items-center">
+      <div className="w-full py-10 flex flex-col items-center">
         <div id="publications" className="flex flex-col gap-7 pt-[px] pb-[60px] px-[32px] max-w-screen-xl ">
 
-          <div className="flex flex-col md:flex-row">
+          <div className="flex flex-col md:flex-row md:py-[60px]">
             <div className="l flex-1">
-              <div className="flex-col gap-4">
-                <div className="flex flex-row text-28 md:text-48 gap-4 py-5">
+              <div className="flex flex-col gap-5">
+                <div className="flex flex-row text-28 md:text-43 gap-4 py-5">
                   <span>Journal</span>
                   <span className="font-bold">Article</span>
                 </div>
@@ -34,10 +34,10 @@ const Publications: React.FC = () => {
             </div> */}
           </div>
 
-          <div className="flex flex-col md:flex-row-reverse">
+          <div className="flex flex-col  md:py-[60px] md:flex-row-reverse">
             <div className="l flex-1">
-              <div className="flex-col gap-4">
-                <div className="flex flex-row text-28 md:text-48 gap-4 py-5">
+              <div className="flex flex-col gap-5">
+                <div className="flex flex-row text-28 md:text-43 gap-4 py-5">
                   <span>Conference</span>
                   <span className="font-bold">Paper</span>
                 </div>
@@ -89,7 +89,7 @@ const Publications: React.FC = () => {
           
           </div>
 
-          <div className="flex flex-col md:flex-row">
+          <div className="flex flex-col md:flex-row  md:py-[60px]">
             <div className="l flex-1">
               <div className="flex-col gap-4">
                 <div className="flex flex-row text-28 md:text-48 gap-4 py-5">
