@@ -9,7 +9,7 @@ export interface IProjectProps {
   number: string
   title: React.ReactNode
   desc: string
-  externalLink: string
+  externalLink?: string
   reverse?: boolean
 }
 
@@ -25,9 +25,9 @@ export default function Project (props: IProjectProps) {
         <div className="text-16 text-gray_border">
           {props.desc}
         </div>
-        <a href={props.externalLink} target="_blank" rel="noopener noreferrer">
+        {/* <a href={props.externalLink} target="_blank" rel="noopener noreferrer">
           <Image width={20} src={readMore} alt="readMore"/>
-        </a>
+        </a> */}
       </div>
     </div>
   );
