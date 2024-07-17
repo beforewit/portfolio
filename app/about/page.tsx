@@ -87,8 +87,7 @@ const About: React.FC = () => {
                     </div>
                   </div>
                   <div>
-                    <span className="font-bold">Master of Science in Business Administration, concentration in Human-Computer Interaction (HCI)</span>
-                    GPA 4.24/4.30
+                    <span className="font-bold">Master of Science in Business Administration, concentration in Human-Computer Interaction (HCI)</span> GPA 4.24/4.30
                   </div>
                 </div>
                 <div>
@@ -158,6 +157,6 @@ const SpecializedSkills = [
 
 const experiences = [
   {iconSrc: lg, title: "AI Product Designer", subTitle: "LG Electronics, Platform Business Center, AI Service Task", period: "Jul 2023 - Present", periodLength: "", details: <div className="leading-[14.3px]">Designed generative AI model-based chatbot service for ThinQ app<br/><br/>Product manager for LG ThinQ Kakao Chatbot, beta launch<br/><br/>Designed voice agent for elderly care service</div>},
-  {iconSrc: polymate, title: "PO (CEO)", subTitle: "LG Electronics, CIC, POLYMATE", period: "Jan 2021 - Jun 2023", periodLength: "(2yrs 6m)", details: <div className="leading-[14.3px]">Designed and commercialized paid online fitness platform</div>},
-  {iconSrc: lg, title: "UX Designer", subTitle: "LG Electronics, CTO, B2B Solution", period: "Jul 2018 - Dec 2020", periodLength: "(2yrs 6m)", details: <div className="leading-[14.3px]">PoC for GS Caltex electric vehicle charging station integrated management solution<br/><br/>Lead UX design of web control system, contributing to commercialization</div>},
+  {iconSrc: polymate, title: "PO (CEO)", subTitle: "LG Electronics, CIC, POLYMATE", period: "Jan 2021 - Jun 2023", periodLength: "(2yrs 6m)", details: <div className="leading-[18.2px]">Designed and commercialized paid online fitness platform</div>},
+  {iconSrc: lg, title: "UX Designer", subTitle: "LG Electronics, CTO, B2B Solution", period: "Jul 2018 - Dec 2020", periodLength: "(2yrs 6m)", details: <div className="leading-[18.2px]">PoC for GS Caltex electric vehicle charging station integrated management solution<br/><br/>Lead UX design of web control system, contributing to commercialization</div>},
 ]
