@@ -6,7 +6,7 @@ const sora = Sora({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "hy.space",
-  description: "hy.space",
+  description: "hy.space descriptions..",
 };
 
 export const viewport: Viewport = {

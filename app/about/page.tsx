@@ -17,7 +17,7 @@ const About: React.FC = () => {
     <main className="flex min-h-screen flex-col bg-White900 items-center">
       <Header/>
       <div className="w-full h-[88px]"/>
-      <div id="skills" className="flex flex-col w-full gap-[64px] justify-between md:flex-row pt-[80px] pb-[60px] px-4 md:px-[32px] max-w-screen-xl ">
+      <div id="skills" className="flex flex-col w-full gap-[64px] justify-between md:flex-row py-[60px] px-4 md:px-[32px] max-w-screen-xl ">
         <div className="l flex flex-1 flex-col py-10 text-tangerine max-w-[520px]">
           <div className="flex text-40 py-3 flex-col md:flex-row items-center md:justify-start md:gap-4">
             <div>
